@@ -1,13 +1,14 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for
 from twilio.rest import Client
 
 app = Flask(__name__)
 
-# Twilio credentials
-TWILIO_SID = "ACa22658ce7db3ceda1300d7f03901e68b"
-TWILIO_AUTH_TOKEN = "2012aab29a7e15cdd8df2532a8bd3d2a"
-TWILIO_PHONE = "+16292455739"
-MY_PHONE = "+918918523121"
+# Twilio credentials from environment variables
+TWILIO_SID = os.environ.get("TWILIO_SID")
+TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")
+TWILIO_PHONE = os.environ.get("TWILIO_PHONE")
+MY_PHONE = os.environ.get("MY_PHONE")
 
 client = Client(TWILIO_SID, TWILIO_AUTH_TOKEN)
 
@@ -37,5 +38,3 @@ def thankyou():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
