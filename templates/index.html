@@ -167,17 +167,26 @@
     </section>
 
     <!-- ===== Footer ===== -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/Mannanhossain"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mannan-hossain/"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/_mannan_hsn/"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="footer-text">&copy; 2023 Mannan Hossain. All rights reserved.</p>
-        </div>
-    </footer>
+   <footer>
+  <div class="container">
+    <div class="social-links">
+      <a href="https://github.com/Mannanhossain" target="_blank">
+        <img src="{{ url_for('static', filename='image/github-sign.png') }}" alt="GitHub" width="30">
+      </a>
+      <a href="https://www.linkedin.com/in/mannan-hossain/" target="_blank">
+        <img src="{{ url_for('static', filename='image/linkedin.png') }}" alt="LinkedIn" width="30">
+      </a>
+      <a href="#" target="_blank">
+        <img src="{{ url_for('static', filename='image/twitter.png') }}" alt="Twitter" width="30">
+      </a>
+      <a href="https://www.instagram.com/_mannan_hsn/" target="_blank">
+        <img src="{{ url_for('static', filename='image/instagram.png') }}" alt="Instagram" width="30">
+      </a>
+    </div>
+    <p class="footer-text">&copy; 2023 Mannan Hossain. All rights reserved.</p>
+  </div>
+</footer>
+
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>

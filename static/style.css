@@ -496,6 +496,15 @@
         .social-links {
             margin-bottom: 20px;
         }
+        .social-links img {
+        margin: 0 10px;
+        transition: transform 0.3s;
+        }
+
+        .social-links img:hover {
+        transform: scale(1.2);
+       }
+
 
         .social-links a {
             display: inline-flex;
@@ -515,6 +524,7 @@
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
         }
+        
 
         .footer-text {
             color: rgba(255, 255, 255, 0.5);
